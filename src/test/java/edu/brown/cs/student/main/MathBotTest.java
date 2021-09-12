@@ -27,5 +27,31 @@ public class MathBotTest {
     assertEquals(1, output, 0.01);
   }
 
-  // TODO: add more unit tests of your own
+  @Test
+  public void TestLargerSubtraction(){
+    MathBot matherator9003 = new MathBot();
+    double output = matherator9003.subtract(1012312, 12312);
+    assertEquals(1000000, output, 0.01);
+  }
+
+  @Test
+  public void TestDoubles(){
+    MathBot matherator9004 = new MathBot();
+    double output = matherator9004.subtract(101.321, 1.21);
+    assertEquals(100.111, output, 0.01);
+  }
+
+  @Test
+  public void TestAddNegatives(){
+    MathBot matherator9004 = new MathBot();
+    double output = matherator9004.add(-1221, -12);
+    assertEquals(-1233, output, 0.01);
+  }
+
+  @Test
+  public void TestSubtractNegatives(){
+    MathBot matherator9004 = new MathBot();
+    double output = matherator9004.subtract(-1221, -12);
+    assertEquals(-1209, output, 0.01);
+  }
 }
