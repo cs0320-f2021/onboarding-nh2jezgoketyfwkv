@@ -1,0 +1,17 @@
+Onboarding Project
+Members: csims
+Project Description: The goal of the project is to be able to parse a csv file containing star's names and x, y, z
+positions. Using this data, you can search for its k nearest neighbors
+
+Design Choices: For csv parsing, I split each line read into strings. I then stored these strings inside a two
+dimensional list.
+
+The nearest neighbors algorithm uses method overloading. There are two ways to find nearest neighbors.
+One way utilizes coordinates and the other utilizes a star's name. If we know the name of the star, then we search
+the data to find that stars coordinates. Using these coordinates we calculate the distance between these coordinates
+and every other star. We put every stars' coordinates in a hashmap so that after we sort the distances, we can get the
+name of the star corresponding to this distance
+
+Tests
+I wasn't sure how to handle JUnit testing for console output. I did add a couple more system tests better.
+

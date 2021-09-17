@@ -1,0 +1,5 @@
+INPUT
+stars data/stars/stardata.csv
+Output
+119616 stars from data/stars.csv
+End

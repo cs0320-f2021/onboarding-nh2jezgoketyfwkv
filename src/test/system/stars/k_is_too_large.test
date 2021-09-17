@@ -1,0 +1,6 @@
+Input
+stars data/stars/ten-star.csv
+naive_neighbors 3 "Sol"
+Output
+Error
+End

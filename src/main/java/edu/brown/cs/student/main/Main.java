@@ -99,7 +99,6 @@ public final class Main {
                 for (int i = 2; i < arguments.length; i++) {
                   name.append(" ").append(arguments[i]);
                 }
-                System.out.println(name.substring(2, name.toString().length() - 1).strip());
                 nearestNeighbors(Integer.parseInt(arguments[1]), name.substring(2,
                     name.toString().length() - 1).strip(), data);
               }
@@ -178,7 +177,7 @@ public final class Main {
    * A handler to serve the site's main page.
    *
    * @return ModelAndView to render.
-   * (main.ftl).
+   * (main.ftl)r
    */
   private static class MainHandler implements TemplateViewRoute {
     @Override
