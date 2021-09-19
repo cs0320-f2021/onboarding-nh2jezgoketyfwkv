@@ -13,5 +13,7 @@ and every other star. We put every stars' coordinates in a hashmap so that after
 name of the star corresponding to this distance
 
 Tests
-I wasn't sure how to handle JUnit testing for console output. I did add a couple more system tests better.
+I wasn't sure how to handle JUnit testing for console output, so I wasn't able to write JUnit tests for the nearest
+neighbors algorithm. However, I was able to write tests for the CSVParser. The first test checks that every column
+is parsed correctly. The second test randomly selects 100 numbers and asserts that the starID is the expected value.
 
